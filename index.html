@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>YUFU.US Demon Slayer RP</title>
+  <style>
+    @font-face {
+      font-family: 'MyCustomFont';
+      src: url('Headbanger-Regular.woff2') format('woff2'),
+           url('Headbanger-Regular.ttf') format('truetype');
+    }
+
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      /* Мягкое фиолетово-ночное свечение по центру, переходящее в глубокую тьму */
+      background: radial-gradient(circle at center, #241631 0%, #0c0912 100%);
+      overflow: hidden;
+    }
+
+    .welcome-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+    }
+
+    .main-logo {
+      width: 170px;
+      height: auto;
+      border-radius: 28px;
+      filter: drop-shadow(0 0 25px rgba(255, 84, 122, 0.4));
+      opacity: 0;
+      animation: cinematicFocus 2s ease-out forwards;
+    }
+
+    .title-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      gap: 4px;
+    }
+
+    .title-wrapper > * {
+      margin: 0;
+      line-height: 1.15;
+      opacity: 0;
+      animation: cinematicFocus 2s ease-out forwards;
+    }
+
+    .main-title {
+      font-family: 'MyCustomFont', sans-serif;
+      font-size: 58px;
+      font-weight: bold;
+      letter-spacing: 5px;
+      background: linear-gradient(90deg, #FF547A, #FF683E);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      filter: drop-shadow(0 0 16px rgba(255, 84, 122, 0.45));
+      animation-delay: 0.1s;
+    }
+
+    .sub-title-1 {
+      font-family: 'MyCustomFont', sans-serif;
+      font-size: 28px;
+      letter-spacing: 3px;
+      background: linear-gradient(90deg, #FF683E, #5F3E79);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      filter: drop-shadow(0 0 12px rgba(255, 104, 62, 0.35));
+      animation-delay: 0.25s;
+    }
+
+    .sub-title-2 {
+      font-family: 'MyCustomFont', sans-serif;
+      font-size: 20px;
+      letter-spacing: 4px;
+      background: linear-gradient(90deg, #FFCFDD, #E03B65);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      filter: drop-shadow(0 0 10px rgba(224, 59, 101, 0.3));
+      animation-delay: 0.4s;
+    }
+
+    @keyframes cinematicFocus {
+      0% {
+        opacity: 0;
+        filter: blur(10px);
+      }
+      50% {
+        opacity: 0.8;
+      }
+      100% {
+        opacity: 1;
+        filter: blur(0px);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="welcome-section">
+    <img src="Котик.jpg" alt="Logo" class="main-logo">
+
+    <div class="title-wrapper">
+      <h1 class="main-title">YUFU.US</h1>
+      <h2 class="sub-title-1">Demon Slayer RP</h2>
+      <h3 class="sub-title-2">Garry's Mod</h3>
+    </div>
+  </div>
+
+</body>
+</html>
